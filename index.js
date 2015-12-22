@@ -16,6 +16,7 @@ Elixir.extend('webpack', function (src, options) {
             path: config.publicPath + '/' + config.js.outputFolder,
             filename: '[name].js',
             chunkFilename: "[name].chunk.js",
+            publicPath: '/assets/' + config.js.outputFolder + '/',
         },
     }, options);
 
